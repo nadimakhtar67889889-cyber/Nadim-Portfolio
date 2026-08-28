@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nadim Akhtar-Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">Nadim<span>.</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu-btn" id="menuBtn">&#9776;</div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <p class="hi">Hi, my name is</p>
+      <h1>Nadim Akhtar</h1>
+      <h2>I'm a Full Stack Web Developer.</h2>
+      <p class="hero-desc">
+        CS student at Central University of Jammu. I build websites and web apps —
+        frontend, backend and database, all of it. Right now I'm working on
+        <strong>BoloKaam</strong>, a home services marketplace app, along with a
+        few smaller projects.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-solid">See my projects</a>
+        <a href="#contact" class="btn btn-outline">Contact me</a>
+      </div>
+    </div>
+    <div class="hero-avatar">
+      <div class="avatar-circle">NA</div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+      <p>
+        I'm currently pursuing my BCA in the Department of Computer Science (MNC)
+        at Central University of Jammu. Outside of college work I spend most of my
+        time building projects to actually learn the stack properly, not just
+        the theory.
+      </p>
+      <p>
+        My main project right now is <strong>BoloKaam</strong> — a full stack
+        home services marketplace where I handled the backend: OTP login,
+        role-based routes for customers and providers, and a bunch of API
+        security fixes after I found around 15 routes that had no auth check
+        on them at all. I also hooked up an AI support chat using the Groq API.
+      </p>
+      <p>I'm comfortable with:</p>
+      <div class="skills-list">
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>Node.js</span>
+        <span>Express.js</span>
+        <span>PostgreSQL</span>
+        <span>Git &amp; GitHub</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project-card featured">
+      <div class="project-info">
+        <span class="tag">Featured Project</span>
+        <h3>BoloKaam</h3>
+        <p>A full stack home services marketplace app connecting customers with
+          local service providers. Built the backend with Node.js, Express and
+          PostgreSQL — OTP based login, role-based access, provider onboarding
+          API, and a security audit that closed ~15 unprotected routes. Also
+          added an AI powered support chat using the Groq LLM API.</p>
+        <div class="stack-tags">
+          <span>Node.js</span><span>Express.js</span><span>PostgreSQL</span><span>REST API</span>
+        </div>
+        <a href="https://github.com/nadimakhtar67889889-cyber" target="_blank" class="project-link">View on GitHub &rarr;</a>
+      </div>
+    </div>
+
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Quiz App</h3>
+        <p>A simple multiple choice quiz app. Shows one question at a time,
+          highlights correct/wrong answers when you click, keeps score and lets
+          you replay at the end.</p>
+        <div class="stack-tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>To-Do List App</h3>
+        <p>Basic to-do list — add tasks, click to mark complete, remove with the
+          × button. Saves everything to localStorage so your list is still
+          there when you refresh.</p>
+        <div class="stack-tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Admission Form</h3>
+        <p>A clean admission/registration form UI — name, email, phone, DOB,
+          course dropdown and address, laid out with CSS Grid so it also works
+          fine on mobile.</p>
+        <div class="stack-tags">
+          <span>HTML</span><span>CSS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="contact-desc">
+      I'm open to internships and freelance web work. Feel free to reach out on
+      any of these:
+    </p>
+    <div class="contact-links">
+      <a href="mailto:nadimakhtar79705833@gmail.com" class="contact-btn">
+        📧 nadimakhtar79705833@gmail.com
+      </a>
+      <a href="https://github.com/nadimakhtar67889889-cyber" target="_blank" class="contact-btn">
+        💻 github.com/nadimakhtar67889889-cyber
+      </a>
+      <a href="https://www.linkedin.com/in/nadim-akhtar-05125b396/" target="_blank" class="contact-btn">
+        🔗 linkedin.com/in/nadim-akhtar-05125b396
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Made by Nadim Akhtar &copy; <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
